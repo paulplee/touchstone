@@ -1,0 +1,12 @@
+{
+  "name": "gateway-q8",
+  "runtime": "litellm",
+  "endpoint": "${LITELLM_BASE_URL}",
+  "model_id": "my-model-q8",
+  "quantization": "Q8_0",
+  "context_window": 131072,
+  "max_tokens": 32768,
+  "kv_cache": null,
+  "hardware": null,
+  "notes": "Served through a LiteLLM gateway. Copy to inference/local/ and set the real model_id."
+}

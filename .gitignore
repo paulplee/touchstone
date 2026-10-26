@@ -1,0 +1,27 @@
+# ------------------------------------------------------------------ toolchain
+.DS_Store
+__pycache__/
+*.py[cod]
+node_modules/
+
+# --------------------------------------------------------------------- secrets
+# Real endpoints and credentials live here, never in the repo.
+.env
+.env.*
+!.env.example
+
+# Inference profiles that name a real host. Examples (`*.example.json`) are
+# committed; your own go here.
+/inference/local/
+
+# ------------------------------------------------------------- private prompts
+# One directory per person, contents ignored. Only the README is published.
+/prompts/*/
+!/prompts/README.md
+
+# ---------------------------------------------------------------- local only
+# Generated results: run records, stats, transcripts and the artifacts models
+# produced. These are yours; anyone else can generate their own.
+/runs/
+/private/
+/dashboard/data.js

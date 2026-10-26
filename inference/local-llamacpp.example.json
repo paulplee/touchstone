@@ -1,0 +1,12 @@
+{
+  "name": "local-llamacpp",
+  "runtime": "llama.cpp",
+  "endpoint": "${LOCAL_LLAMA_BASE_URL}",
+  "model_id": "my-model",
+  "quantization": "Q4_K_M",
+  "context_window": 32768,
+  "max_tokens": 8192,
+  "kv_cache": "q8_0",
+  "hardware": "this laptop",
+  "notes": "Local llama.cpp server. /props usually answers, so `bench probe` can verify n_ctx and the model path."
+}
